@@ -5,11 +5,11 @@
 
 @layer utilities{
   .bgSlope {
-    background-image: linear-gradient(-75deg, #DBFFC6 62.5%, transparent 62.5% 100%);
+    background-image: linear-gradient(-75deg, #D4F588 62.5%, transparent 62.5% 100%);
   }
 
   .bgDual {
-    background-image: linear-gradient(68.17deg, #DF4196 -26.78%, #F080CA 31.79%);
+    background-image: linear-gradient(68.17deg, #FF1255 -26.78%, #FF88AA 31.79%);
   }
 }
 
