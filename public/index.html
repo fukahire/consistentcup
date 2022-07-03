@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>天下統一武器大會</title>
 </head>
+
 <body>
-    <section class="bgDual">
-        <div class="bgSlope h-screen w-100 flex justify-end items-center relative">
+    <section class="bgDual flex flex-col items-center md:block">
+        <div class="md:bgSlope md:h-screen w-[90%] md:w-full flex justify-end items-center relative">
             <!-- 左邊裝飾 -->
             <div class="bg-pink-400 left-0"></div>
+            <div>
+                <!-- 手機版標題 -->
+            <div class="md:hidden flex flex-col items:center text-center my-10">
+                <h3 class="font-sans font-bold text-4xl ">天下統一武器大會</h3>
+                <h5 class="font-sans font-black">Lorem ipsum dolor sit amet, conse</h5>
+            </div>
             <!-- 中間內容 -->
-            <div class="w-4/5 h-[70%] bg-white relative z-10 flex flex-col justify-center items-center mt-14 rounded-l-xl shadow-xl px-6">
+            <div
+                class="md:my-20 md:my-auto px-4 lg:px-20 py-10 bg-white relative z-10 flex flex-col justify-center items-center rounded-md md:rounded-l-xl md:rounded-r-none shadow-xl gap-4">
                 <!-- 標題 -->
-                <div class="absolute -top-14 right-10 flex flex-row items-end">
+                <div class="md:absolute md:-top-14 md:right-10 hidden md:flex flex-col md:flex-row items:center md:items-end md:gap-2">
                     <h3 class="font-sans font-bold text-4xl ">天下統一武器大會</h3>
-                    <h5 class="font-sans font-black ml-2">Lorem ipsum dolor sit amet, conse</h5>
+                    <h5 class="font-sans font-black">Lorem ipsum dolor sit amet, conse</h5>
                 </div>
                 <!-- 內容 -->
                 <!-- 前言 -->
@@ -29,39 +40,98 @@
                 </div> -->
                 <!-- 參賽規則 -->
                 <div class="flex justify-center mb-8">
-                    <div class="font-sans rounded-3xl w-40 h-12 text-3xl font-bold text-mainred text-center flex justify-center items-center"><p>參賽規則</p></div>
+                    <div
+                        class="font-sans rounded-3xl w-40 h-12 text-3xl font-bold text-mainred text-center flex justify-center items-center">
+                        <p>參賽規則</p>
+                    </div>
                 </div>
                 <!-- icon -->
-                <div class="flex w-full justify-center mb-8 h-[68%]">
-                    <div class="w-1/5 flex flex-col items-center justify-center border-dashed border-8 border-subgray rounded-2xl">
-                        <div class="font-sans text-2xl font-bold text-markgreen text-center flex justify-center items-center mb-4"><p class="border-b-8 border-maingray">參賽資格</p></div>
-                        <div class="w-4/5 mb-6"><img src="./image/cup_1.png" alt=""></div>
-                        <p class="text-center h-14 flex items-center">具 <span class="font-sans text-markred text-xl font-bold">聯盟資格</span> 皆可參加<br> </p>
+                <div
+                    class="flex justify-center 2xl:justify-between mb-8 mx-auto h-[800px] sm:h-auto md:h-[400px] md:w-[800px] 2xl:w-[1200px] 2xl:h-[450px] flex-wrap 2xl:flex-nowrap gap-2">
+                    <div
+                        class="w-full md:w-[48%] flex flex-row items-center px-8 2xl:px-0 justify-between 2xl:justify-center border-dashed border-[6px] border-subgray rounded-2xl 2xl:flex-col 2xl:w-[24%]">
+                        <div class="flex flex-col justify-center 2xl:hidden">
+                            <div class="font-sans text-2xl font-bold text-markgreen flex items-center mb-2">
+                                <p class="border-maingray">參賽資格</p>
+                            </div>
+                            <p class="">具 <span class="font-sans text-markred text-xl font-bold">聯盟資格</span> 皆可參加<br>
+                            </p>
+                        </div>
+                        <div
+                            class="font-sans text-2xl font-bold text-markgreen text-center justify-center items-center mb-4 hidden 2xl:flex">
+                            <p class="border-b-8 border-maingray">參賽資格</p>
+                        </div>
+                        <div class="w-[40%] 2xl:w-4/5 2xl:mb-6 max-w-[250px]"><img src="./image/cup_1.png" alt=""></div>
+                        <p class="text-center h-14 items-center hidden 2xl:flex">具 <span
+                                class="font-sans text-markred text-xl font-bold">聯盟資格</span> 皆可參加<br> </p>
                     </div>
-                    <div class="w-1/5 flex flex-col items-center justify-center border-dashed border-8 border-subgray rounded-2xl ml-8">
-                        <div class="font-sans text-2xl font-bold text-markgreen text-center flex justify-center items-center mb-4"><p class="border-b-8 border-maingray">報名人數</p></div>
-                        <div class="w-4/5 mb-6"><img src="./image/cup_2.png" alt=""></div>
-                        <p class="text-center h-14 flex items-center">一組 <span class="font-sans text-markred text-xl font-bold">4-6</span> 個隊員<br> </p>
+                    <div
+                        class="w-full md:w-[48%] flex flex-row items-center px-8 2xl:px-0 justify-between 2xl:justify-center border-dashed border-[6px] border-subgray rounded-2xl 2xl:flex-col 2xl:w-[24%] 2xl:ml-4">
+                        <div class="2xl:hidden">
+                            <div class="font-sans text-2xl font-bold text-markgreen flex items-center mb-2">
+                                <p class="border-maingray">報名人數</p>
+                            </div>
+                            <p class="">一隊 <span class="font-sans text-markred text-xl font-bold">4-6</span> 個隊員<br>
+                            </p>
+                        </div>
+                        <div
+                            class="font-sans text-2xl font-bold text-markgreen text-center justify-center items-center mb-4 hidden 2xl:flex">
+                            <p class="border-b-8 border-maingray">報名人數</p>
+                        </div>
+                        <div class="w-[40%] 2xl:w-4/5 2xl:mb-6 max-w-[250px]"><img src="./image/cup_2.png" alt=""></div>
+                        <p class="text-center h-14 items-center hidden 2xl:flex">一隊 <span
+                                class="font-sans text-markred text-xl font-bold">4-6</span> 個隊員<br> </p>
                     </div>
-                    <div class="w-1/5 flex flex-col items-center justify-center border-dashed border-8 border-subgray rounded-2xl ml-8">
-                        <div class="font-sans text-2xl font-bold text-markgreen text-center flex justify-center items-center mb-4"><p class="border-b-8 border-maingray">使用武器</p></div>
-                        <div class="w-4/5 mb-6"><img src="./image/cup_3.png" alt=""></div>
-                        <p class="text-center h-14 flex items-center">每組自選 <span class="font-sans text-markred text-xl font-bold">1-2</span> 種武器<br> </p>
+                    <div
+                        class="w-full md:w-[48%] flex flex-row items-center px-8 2xl:px-0 justify-between 2xl:justify-center border-dashed border-[6px] border-subgray rounded-2xl 2xl:flex-col 2xl:w-[24%] 2xl:ml-4">
+                        <div class="2xl:hidden">
+                            <div class="font-sans text-2xl font-bold text-markgreen flex items-center mb-2">
+                                <p class="border-maingray">使用武器</p>
+                            </div>
+                            <p class="">每隊自選 <span class="font-sans text-markred text-xl font-bold">1</span> 種武器<br>
+                            </p>
+                        </div>
+                        <div
+                            class="font-sans text-2xl font-bold text-markgreen text-center justify-center items-center mb-4 hidden 2xl:flex">
+                            <p class="border-b-8 border-maingray">使用武器</p>
+                        </div>
+                        <div class="w-[40%] 2xl:w-4/5 2xl:mb-6 max-w-[250px]"><img src="./image/cup_3.png" alt=""></div>
+                        <p class="text-center h-14 items-center hidden 2xl:flex">每隊自選 <span
+                                class="font-sans text-markred text-xl font-bold">1</span> 種武器<br> </p>
                     </div>
-                    <div class="w-1/5 flex flex-col items-center justify-center border-dashed border-8 border-markgreen rounded-2xl ml-8">
-                        <div class="font-sans text-2xl font-bold text-markgreen text-center flex justify-center items-center mb-4"><p class="border-b-8 border-maingray">優勝獎品</p></div>
-                        <div class="w-4/5 mb-6"><img class="rounded-md" src="./image/cup_4.png" alt=""></div>
-                        <p class="text-center h-14">第 1 名隊伍將獲得<br><span class="font-sans text-markred text-xl font-bold">學院DC優勝武器身份組</span></p>
+                    <div
+                        class="w-full md:w-[48%] flex flex-row items-center px-8 2xl:px-0 justify-between 2xl:justify-center border-dashed border-[6px] border-subgreen rounded-2xl 2xl:flex-col 2xl:w-[24%] 2xl:ml-4">
+                        <div class="2xl:hidden">
+                            <div class="font-sans text-2xl font-bold text-markgreen flex items-center mb-2">
+                                <p class="border-maingray">冠軍優勝獎勵</p>
+                            </div>
+                            <p class=""><span class="font-sans text-markred text-xl font-bold">學院DC<br>優勝武器身份組</span>
+                            </p>
+                        </div>
+                        <div
+                            class="font-sans text-2xl font-bold text-markgreen text-center justify-center items-center mb-4 hidden 2xl:flex">
+                            <p class="border-b-8 border-maingray">冠軍優勝獎勵</p>
+                        </div>
+                        <div class="w-[40%] 2xl:w-4/5 2xl:mb-6 max-w-[250px]"><img class="rounded-md"
+                                src="./image/cup_4.png" alt=""></div>
+                        <p class="text-center h-14 items-center hidden 2xl:block"><span
+                                class="font-sans text-markred text-xl font-bold">學院DC優勝武器身份組</span></p>
                     </div>
                 </div>
-                <div class="flex justify-center absolute left-1/2 -translate-x-2/4 -bottom-6">
-                    <button class="font-sans rounded-3xl w-40 h-12 text-lg bg-slate-500 font-medium text-white shadow-lg">我有問題</button>
-                    <button class="font-sans rounded-3xl w-40 h-12 text-lg bg-mainred font-medium text-white ml-12 shadow-lg">我要報名</button>
+                <div
+                    class="md:h-auto flex justify-center md:absolute left-1/2 md:-translate-x-2/4 md:-bottom-6 flex-col md:flex-row items-center gap-2 md:gap-12 ">
+                    <a href="https://discord.gg/rVySqaET9k"
+                        class="block font-sans rounded-3xl w-40 h-12 text-lg bg-slate-500 font-medium text-white shadow-lg text-center leading-[48px]">聯絡我們</a>
+                    <a
+                        class="font-sans rounded-3xl w-40 h-12 text-lg bg-mainred font-medium text-white shadow-lg text-center leading-[48px]">我要報名</a>
                 </div>
             </div>
+            </div>
             
-            
+
+
         </div>
     </section>
 </body>
+
 </html>
